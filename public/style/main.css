@@ -1,0 +1,56 @@
+html {
+	font-family: sans-serif, Arial, Helvetica;
+}
+
+body {
+	background-color: lightskyblue;
+	margin: 1em;
+}
+
+.container {
+	min-width: 20em;
+	max-width: 30em;
+	margin: 0 auto;
+}
+
+input,
+label {
+	display: block;
+}
+
+label {
+	color: rgb(0, 0, 0);
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.6);
+	min-width: 20em;
+	max-width: 30em;
+	margin: 0 auto;
+	padding: 5em;
+	box-shadow: -0.2em 0.5em 2em 0.3em rgba(0, 0, 0, 0.6);
+}
+
+form {
+	text-align: left;
+}
+
+input {
+	width: 20em;
+	border: none;
+	border-radius: 3em;
+	padding: 1em 2em;
+	margin-bottom: 1em;
+}
+
+p {
+	text-align: left;
+}
+
+.submit {
+	padding: 0.7em;
+	border-radius: 1.5em;
+	border: none;
+	background-color: rgb(101, 150, 173);
+	color: rgb(255, 255, 255);
+}
