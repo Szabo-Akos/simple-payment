@@ -13,13 +13,13 @@
 						<?php if(isset($data['creditCardNumberError'])) { ?>
 							<p class="error"><?php echo $data['creditCardNumberError'] ?></p>
 						<?php } ?>
-						<label for="creditCardExpirationMonth">Credit expiration month:</label>
+						<label for="creditCardExpirationMonth">Credit card expiration month:</label>
 						<input type="number" id="creditCardExpirationMonth" name="creditCardExpirationMonth" min="1" max="12" placeholder="2"
 										value="<?php if(isset($_POST['creditCardExpirationMonth'])) { echo $_POST['creditCardExpirationMonth']; } ?>">
 						<?php if(isset($data['creditCardExpirationMonthError'])) { ?>
 							<p class="error"><?php echo $data['creditCardExpirationMonthError'] ?></p>
 						<?php } ?>
-						<label for="creditCardExpirationYear">Credit expiration year:</label>
+						<label for="creditCardExpirationYear">Credit card expiration year:</label>
 						<input type="number" id="creditCardExpirationYear" name="creditCardExpirationYear" min="1958" placeholder="1958"
 										value="<?php if(isset($_POST['creditCardExpirationYear'])) { echo $_POST['creditCardExpirationYear']; } ?>">
 						<?php if(isset($data['creditCardExpirationYearError'])) { ?>
