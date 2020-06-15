@@ -31,6 +31,9 @@ class Payment extends Controller {
 		$areTherePaymentErrors = count(array_filter($this->paymentError->errors)) > 0;
 		if ($areTherePaymentErrors) {
 			$this->view('payment/index', $this->paymentError->errors);
+		} else {
+			$amountPaidInEuro = $this->exchangeTheAmountToPayFromHufToEur();
+			$this->view('payment/transactionResult', ['amountPaidInEuro' => $amountPaidInEuro]);
 		}
 	}
 
@@ -113,5 +116,16 @@ class Payment extends Controller {
 		return $year == $currentYear 
 						? $month < $currentMonth
 						: $year < $currentYear;
+	}
+
+	private function exchangeTheAmountToPayFromHufToEur() {
+		$exchangeRate = $this->getHufToEurExchangeRate();
+		return filter_input(INPUT_POST,'amountToPay')*$exchangeRate['HUF_EUR'];
+	}
+
+	private function getHufToEurExchangeRate() {
+		return json_decode(file_get_contents(
+			"https://free.currconv.com/api/v7/convert?q=HUF_EUR&compact=ultra&apiKey=5d2cf53d2ed461542f0b"),
+			true);
 	}
 }
