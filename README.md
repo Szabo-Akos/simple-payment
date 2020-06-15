@@ -5,3 +5,12 @@ This is a simple payment form with server side validation and currency exchange 
 ## Note
 
 I would use SSL for such payment transactions, but since I do not have an SSL subscription I will skip SSL for now.
+
+### Requirement
+
+-   PHP 5.6
+-   Apache HTTP Server
+
+### URL
+
+http://localhost/simple-payment/public/payment/index
