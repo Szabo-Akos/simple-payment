@@ -54,3 +54,7 @@ p {
 	background-color: rgb(101, 150, 173);
 	color: rgb(255, 255, 255);
 }
+
+.error {
+	color: rgb(156, 30, 30);
+}
