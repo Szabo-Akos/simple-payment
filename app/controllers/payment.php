@@ -2,19 +2,19 @@
 
 class Payment extends Controller {
 	private $errorMessages = array(
-		'CREDIT_CARD_NUMBER_NOT_GIVEN' => "No Credit card number given.",
+		'CREDIT_CARD_NUMBER_NOT_GIVEN' => "No credit card number given.",
 		'CREDIT_CARD_NUMBER_CONTAINS_INVALID_CHARACTER' => "Credit card number should contains only numbers, no other characters allowed.",
 		'CREDIT_CARD_NUMBER_LENGTH' => "Credit card number must be 16 long.",
 		'CREDIT_CARD_NUMBER_INVALID' => "Credit card number is invalid.",
 		'CREDIT_CARD_EXPIRED' => "Credit card expired.",
 
-		'EXPIRATION_MONTH_NOT_GIVEN' => "No Credit Card expiration month given.",
+		'EXPIRATION_MONTH_NOT_GIVEN' => "No credit card expiration month given.",
 		'EXPIRATION_MONTH_SHOULD_BE_NUMBER' => "Credit card expiration month should be given as number between 1 and 12.",
 		'EXPIRATION_MONTH_NUMBER_INVALID' => "Credit card expiration month is out of range, please enter a number between 1 and 12.",
 	
-		'EXPIRATION_YEAR_NOT_GIVEN' => "No Credit Card expiration year given.",
-		'EXPIRATION_YEAR_SHOULD_BE_NUMBER' => "Credit Card expiration year should be a number, for example: 2050.",
-		'EXPIRATION_YEAR_NUMBER_INVALID' => "Credit Card expiration year must be a higher than 1958, because first credit card was introduced back then.",
+		'EXPIRATION_YEAR_NOT_GIVEN' => "No credit card expiration year given.",
+		'EXPIRATION_YEAR_SHOULD_BE_NUMBER' => "Credit card expiration year should be a number, for example: 2050.",
+		'EXPIRATION_YEAR_NUMBER_INVALID' => "Credit card expiration year must be a higher than 1958, because first credit card was introduced back then.",
 
 		'AMONT_TO_PAY_NOT_GIVEN' => "No amount to pay given.",
 		'AMONT_TO_PAY_SHOULD_BE_NUMBER' => "The amount to pay must contain only number.",
