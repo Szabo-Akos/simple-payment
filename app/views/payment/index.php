@@ -2,6 +2,9 @@
 	include ('../app/views/header.php');
 	?>
 	</head>
+	<?php
+		include ('layout/header.php');
+	?>
 	<body>
 		<div class="container">
 			<div class="card">

@@ -2,6 +2,16 @@ html {
 	font-family: sans-serif, Arial, Helvetica;
 }
 
+.header {
+	text-align: center;
+}
+
+h1 {
+	color: rgb(36, 106, 153);
+	font-family: sans-serif, Arial, Helvetica;
+	font-size: 250%;
+}
+
 body {
 	background-color: lightskyblue;
 	margin: 1em;
